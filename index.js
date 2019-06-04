@@ -5,12 +5,12 @@ class DocsetHandleMultiplexer {
     this.docsets = docsets
   }
 
-  lookup(str) {
-    return this.docsets.map(d => d.lookup(str))
+  lookup(str, opts) {
+    return this.docsets.map(d => d.lookup(str, opts))
   }
 
-  merged(str) {
-    const all = this.lookup(str).reduce((acc, e) => acc.concat(e), [])
+  merged(str, opts) {
+    const all = this.lookup(str, opts).reduce((acc, e) => acc.concat(e), [])
     const sorted = all.sort((a, b) => a.name.length - b.name.length)
     return sorted
   }
