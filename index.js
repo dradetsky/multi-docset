@@ -16,8 +16,8 @@ class DocsetHandleMultiplexer {
   }
 }
 
-function multiDocsetConvenienceFn(...dbRoots) {
-  const docsets = dbRoots.map(r => docset(r))
+function multiDocsetConvenienceFn(files) {
+  const docsets = files.map(r => docset(r))
   return new DocsetHandleMultiplexer(docsets)
 }
 
