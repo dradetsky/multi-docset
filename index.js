@@ -14,6 +14,10 @@ class DocsetHandleMultiplexer {
     const sorted = all.sort((a, b) => a.name.length - b.name.length)
     return sorted
   }
+
+  info() {
+    return this.docsets.map(d => d.info())
+  }
 }
 
 function multiDocsetConvenienceFn(files) {
