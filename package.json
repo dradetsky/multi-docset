@@ -1,6 +1,6 @@
 {
   "name": "multi-docset",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "many docsets at once",
   "main": "index.js",
   "author": "dmr",
