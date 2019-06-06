@@ -4,5 +4,19 @@
   "description": "many docsets at once",
   "main": "index.js",
   "author": "dmr",
-  "license": "WTFPL"
+  "scripts": {
+    "fix": "standard --fix"
+  },
+  "homepage": "https://github.com/dradetsky/multi-docset#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dradetsky/multi-docset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dradetsky/multi-docset/issues"
+  },
+  "license": "WTFPL",
+  "dependencies": {
+    "docset": "^0.0.1"
+  }
 }
