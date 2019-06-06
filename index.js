@@ -18,6 +18,10 @@ class DocsetHandleMultiplexer {
   info () {
     return this.docsets.map(d => d.info())
   }
+
+  sanityCheck () {
+    return this.docsets.map(d => d.sanityCheck())
+  }
 }
 
 function multiDocsetConvenienceFn (files) {
